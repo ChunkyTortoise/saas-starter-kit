@@ -3,6 +3,8 @@ import { createClient } from '@/lib/supabase/server'
 import { stripe, PRICE_IDS } from '@/lib/stripe'
 import type { TierKey } from '@/lib/billing'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: Request) {
   try {
     const supabase = await createClient()

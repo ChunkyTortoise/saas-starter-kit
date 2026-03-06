@@ -4,6 +4,8 @@ import { getWebhookActions } from '@/lib/billing'
 import { createClient } from '@supabase/supabase-js'
 import type Stripe from 'stripe'
 
+export const dynamic = 'force-dynamic'
+
 // Use service role for webhook handler (no user context)
 function getAdminClient() {
   return createClient(
