@@ -1,3 +1,9 @@
+![Tests](https://img.shields.io/badge/tests-29%20passing-brightgreen)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-green)
+![CI](https://github.com/ChunkyTortoise/saas-starter-kit/actions/workflows/ci.yml/badge.svg)
+
 # SaaS Starter Kit
 
 Next.js 15 SaaS starter with Supabase auth and Stripe billing.
@@ -83,6 +89,14 @@ supabase/
 tests/
   billing.test.ts           Billing logic + webhook tests
 ```
+
+## Screenshots
+
+| Landing | Dashboard | Billing |
+|---------|-----------|---------|
+| ![Landing](docs/screenshots/landing.png) | ![Dashboard](docs/screenshots/dashboard.png) | ![Billing](docs/screenshots/billing.png) |
+
+> Live at [https://saas-starter-kit-caymanroden-6685.vercel.app](https://saas-starter-kit-caymanroden-6685.vercel.app)
 
 ## License
 
