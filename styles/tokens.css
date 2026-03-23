@@ -1,0 +1,93 @@
+/**
+ * SaaS Starter Kit Design Tokens
+ * Source of truth for colors, typography, spacing, and radii.
+ * AI agents: always read this file before modifying any UI component.
+ *
+ * Brand: Blue (#3B82F6) — default Tailwind blue (extend for client projects)
+ * Framework: Tailwind CSS v3, shadcn/ui HSL convention
+ */
+
+:root {
+  /* ── Brand palette (HSL — matches shadcn globals.css) ────────────────── */
+  --color-blue:         221.2 83.2% 53.3%;   /* #3B82F6 — primary */
+  --color-blue-hover:   221.2 83.2% 46%;     /* slightly darker */
+
+  /* ── Surface (light mode) ───────────────────────────────────────────── */
+  --color-bg:          0 0% 100%;         /* #FFFFFF */
+  --color-surface:     0 0% 100%;         /* #FFFFFF */
+  --color-surface-alt: 210 40% 96.1%;    /* #EFF6FF */
+  --color-border:      214.3 31.8% 91.4%; /* #E2E8F0 */
+
+  /* ── Text ───────────────────────────────────────────────────────────── */
+  --color-text-primary:  222.2 84% 4.9%;    /* #0F172A — headings */
+  --color-text-body:     222.2 47.4% 11.2%; /* #1E293B — body */
+  --color-text-muted:    215.4 16.3% 46.9%; /* #64748B — captions */
+  --color-text-inverse:  210 40% 98%;       /* #F8FAFC — on primary */
+
+  /* ── Semantic layer ─────────────────────────────────────────────────── */
+  --color-action-primary:        221.2 83.2% 53.3%;
+  --color-action-primary-hover:  221.2 83.2% 46%;
+  --color-action-on-primary:     210 40% 98%;
+
+  /* Plan tiers */
+  --color-plan-free:     215.4 16.3% 46.9%;   /* muted gray */
+  --color-plan-pro:      221.2 83.2% 53.3%;   /* blue */
+  --color-plan-business: 271.5 81.3% 55.9%;   /* violet */
+
+  /* Status colors */
+  --color-success:  142.1 76.2% 36.3%;   /* #16A34A */
+  --color-warning:  37.7 92.1% 50.2%;    /* #D97706 */
+  --color-error:    0 84.2% 60.2%;       /* #EF4444 */
+
+  /* ── Typography ─────────────────────────────────────────────────────── */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+
+  /* ── Spacing ─────────────────────────────────────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* ── Radii ───────────────────────────────────────────────────────────── */
+  --radius:      0.5rem;     /* 8px — shadcn default */
+  --radius-sm:   0.25rem;    /* 4px */
+  --radius-lg:   0.75rem;    /* 12px */
+  --radius-xl:   1rem;       /* 16px */
+  --radius-full: 9999px;
+
+  /* ── Shadows ─────────────────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow:    0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --duration-fast:  150ms;
+  --duration-base:  250ms;
+  --duration-slow:  450ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:  cubic-bezier(0.4, 0, 1, 1);
+}
+
+/*
+ * To customize for a specific client:
+ * Override the brand variables in a separate theme file, e.g.:
+ *
+ * :root {
+ *   --color-blue: 162 70% 45%;   // teal brand
+ *   --color-blue-hover: 162 70% 38%;
+ * }
+ */
