@@ -1,0 +1,5 @@
+# CI build environment uses placeholder values for Stripe keys.
+# These are not real credentials — they are intentional test stubs
+# required to satisfy Next.js build-time env var checks.
+# Rule: stripe-access-token matched sk_test_placeholder in .github/workflows/ci.yml
+7c7bea6250595909a894eab93e8fd0620eb8d566
