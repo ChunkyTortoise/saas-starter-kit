@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -20,8 +21,13 @@ export function PricingTable({ currentTier, onSelect }: PricingTableProps) {
         const isPopular = key === 'pro'
 
         return (
-          <Card
+          <motion.div
             key={key}
+            whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(244, 63, 94, 0.15)' }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            className="rounded-xl"
+          >
+          <Card
             className={isPopular ? 'border-primary shadow-lg relative' : 'relative'}
           >
             {isPopular && (
@@ -69,6 +75,7 @@ export function PricingTable({ currentTier, onSelect }: PricingTableProps) {
               </Button>
             </CardFooter>
           </Card>
+          </motion.div>
         )
       })}
     </div>
